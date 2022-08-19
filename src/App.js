@@ -16,7 +16,7 @@ function App() {
       <Header/>
       <main className='container content' >
         
-          <Routes>
+          <Routes basename='/react-cooking--book'>
               <Route path='/' element={<Home/>} />
               <Route path='/about' element={<About/>} />
               <Route path='/contacts' element={<Contact/>} />    
