@@ -12,20 +12,17 @@ import { Recipe } from './pages/Recipe'
 function App() {
   return (
     <>
-    <Router>
+    <Router basename='/react-cooking--book'>
       <Header/>
-      <main className='container content' >
-        
-          <Routes basename='/react-cooking--book'>
+      <main className='container content' >        
+          <Routes >
               <Route path='/' element={<Home/>} />
               <Route path='/about' element={<About/>} />
               <Route path='/contacts' element={<Contact/>} />    
               <Route path='category/:name' element={<Category />} />  
               <Route path='meal/:id' element={<Recipe />} />  
               <Route path='*' element={<NotFound/>} />
-        </Routes>
-        
-        
+        </Routes>       
       </main>
       <Footer/>
     </Router>
