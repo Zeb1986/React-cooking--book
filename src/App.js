@@ -12,7 +12,7 @@ import { Recipe } from './pages/Recipe'
 function App() {
   return (
     <>
-    <HashRouter>
+    <HashRouter basename='/react-cooking--book'>
       <Header/>
       <main className='container content' >        
           <Routes >
