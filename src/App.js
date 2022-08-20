@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, HashRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
@@ -12,7 +12,7 @@ import { Recipe } from './pages/Recipe'
 function App() {
   return (
     <>
-    <HashRouter basename='/react-cooking--book'>
+    <Router basename='/react-cooking--book'>
       <Header/>
       <main className='container content' >        
           <Routes >
@@ -25,7 +25,7 @@ function App() {
         </Routes>       
       </main>
       <Footer/>
-    </HashRouter>
+    </Router>
     </>
   );
 }
