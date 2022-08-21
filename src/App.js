@@ -12,7 +12,7 @@ import { Recipe } from './pages/Recipe'
 function App() {
   return (
     <>
-    <Router basename='/react-cooking--book'>
+    <Router basename='/React-cooking--book'>
       <Header/>
       <main className='container content' >        
           <Routes >
